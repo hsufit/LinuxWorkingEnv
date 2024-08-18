@@ -5,6 +5,7 @@ VUNDLE_INSTALL_PATH=~/.vim/bundle/Vundle.vim
 VIMRC_PATH=~/.vimrc
 GITCONFIG_PATH=~/.gitconfig
 INPUTRC_PATH=~/.inputrc
+TIGRC_PATH=~/.tigrc
 
 if [ -d "$VUNDLE_INSTALL_PATH" ]; then
     echo "[Skip]The Vundle plugin already existed in ${VUNDLE_INSTALL_PATH}"
@@ -46,5 +47,11 @@ if [ -f "$INPUTRC_PATH" ]; then
     echo "[Warning]The inputrc already existed in ${INPUTRC_PATH}"
 else
     ln -s ${SCRIPT_DIR}/inputrc ~/.inputrc
+fi
+
+if [ -f "$TIGRC_PATH" ]; then
+    echo "[Warning]The tigrc already existed in ${TIGRC_PATH}"
+else
+    ln -s ${SCRIPT_DIR}/tigrc ~/.tigrc
 fi
 
