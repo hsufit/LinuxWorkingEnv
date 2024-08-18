@@ -1,0 +1,12 @@
+[user]
+	# These values are set in ~/.gitconfig_local
+	# It should contain:
+	# email=<your email>
+	# name=<your name>
+
+[core]
+	editor = vim
+
+[include]
+	path = ~/.gitconfig_local
+
