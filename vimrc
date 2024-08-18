@@ -24,3 +24,15 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" ==== VIM KEY MAP SETTINGS ====
+" Tab control
+nnoremap dir :Explore<CR>
+nnoremap <C-t>n :Texplore<CR>
+nnoremap <S-h> :tabprevious<CR>
+nnoremap <S-l> :tabnext<CR>
+
+" Split control
+nnoremap sdir :Sexplore<CR>
+nnoremap vdir :Vexplore<CR>
+
