@@ -1,4 +1,8 @@
 " ==== VIM INTERNAL SETTINGS ====
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+
 " line status
 set number
 set signcolumn=number
@@ -36,6 +40,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" solarized theme
+Plugin 'lifepillar/vim-solarized8'
+
 " git line edit status
 Plugin 'airblade/vim-gitgutter'
 
@@ -58,5 +65,7 @@ filetype plugin indent on    " required
 " Theme
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
+set background=dark
+colorscheme solarized8_high
 " ==== VIM BUNDLE SETTINGS END ====
 
