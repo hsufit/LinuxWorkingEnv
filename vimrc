@@ -1,4 +1,8 @@
 " ==== VIM INTERNAL SETTINGS ====
+" line status
+set number
+set signcolumn=number
+
 " Misc
 set mouse=a
 " ==== VIM INTERNAL SETTINGS END ====
@@ -31,6 +35,9 @@ Plugin 'VundleVim/Vundle.vim'
 " status line
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" git line edit status
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
