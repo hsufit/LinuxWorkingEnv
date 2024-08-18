@@ -55,6 +55,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" airline to sync tmux status line
+Plugin 'edkolev/tmuxline.vim'
+
 " solarized theme
 Plugin 'lifepillar/vim-solarized8'
 
@@ -80,6 +83,8 @@ filetype plugin indent on    " required
 " Theme
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
+let g:airline#extensions#tmuxline#enabled=1
+let airline#extensions#tmuxline#snapshot_file="~/.tmux-status.conf"
 set background=dark
 colorscheme solarized8_high
 " ==== VIM BUNDLE SETTINGS END ====
