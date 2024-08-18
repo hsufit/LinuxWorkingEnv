@@ -1,14 +1,29 @@
+" from: https://vi.stackexchange.com/questions/25149/advice-to-add-set-nocompatible-as-first-line-of-vimrc
+if &compatible
+  " Vim defaults to `compatible` when selecting a vimrc with the command-line
+  " `-u` argument. Override this.
+  set nocompatible
+endif
+
 " ==== VIM INTERNAL SETTINGS ====
 let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 
 " line status
-set number
+set number               " show line number
+set numberwidth=5
 set signcolumn=number
+set cursorline           " highlight cursor line
+
+" search
+set hlsearch             " highlight search result
+set incsearch            " show matched cases during typing
 
 " Misc
 set mouse=a
+set showcmd              " show the key binding command before finished
+set clipboard=unnamed    " unnamed match to yy in vim, unnamedplus match to C-c/C-v for other program
 " ==== VIM INTERNAL SETTINGS END ====
 
 " ==== VIM KEY MAP SETTINGS ====
