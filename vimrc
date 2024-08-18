@@ -10,6 +10,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" status line
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -26,6 +30,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " ==== VIM SETTINGS ====
+" Theme
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+
 " Misc
 set mouse=a
 
