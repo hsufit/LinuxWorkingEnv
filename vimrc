@@ -1,5 +1,23 @@
+" ==== VIM INTERNAL SETTINGS ====
+" Misc
+set mouse=a
+" ==== VIM INTERNAL SETTINGS END ====
+
+" ==== VIM KEY MAP SETTINGS ====
+" Tab control
+nnoremap dir :Explore<CR>
+nnoremap <C-t>n :Texplore<CR>
+nnoremap <S-h> :tabprevious<CR>
+nnoremap <S-l> :tabnext<CR>
+
+" Split control
+nnoremap sdir :Sexplore<CR>
+nnoremap vdir :Vexplore<CR>
+" ==== VIM KEY MAP SETTINGS END ====
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -29,22 +47,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" ==== VIM SETTINGS ====
+" ==== VIM BUNDLE SETTINGS ====
 " Theme
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
-
-" Misc
-set mouse=a
-
-" ==== VIM KEY MAP SETTINGS ====
-" Tab control
-nnoremap dir :Explore<CR>
-nnoremap <C-t>n :Texplore<CR>
-nnoremap <S-h> :tabprevious<CR>
-nnoremap <S-l> :tabnext<CR>
-
-" Split control
-nnoremap sdir :Sexplore<CR>
-nnoremap vdir :Vexplore<CR>
+" ==== VIM BUNDLE SETTINGS END ====
 
